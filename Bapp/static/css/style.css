@@ -1,0 +1,46 @@
+body{
+    background-image: url('../images/wallpaper.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+}
+
+
+.row{
+    width: 50%;
+    padding: 30px;
+    margin-left: 360px;
+    color: green;
+    border: 2px solid black;
+    margin-top: 15px;
+    background-color: rgb(157, 168, 131);
+}
+
+textarea {
+    resize: none;
+  }
+
+.lb{
+    margin-left: 1200px;
+}
+
+.im1{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  
+}
+
+.ta table{
+    color: #000066;
+    background-color: rgb(79, 104, 104)  ;
+}
+
+#box{
+
+    width: 300px;
+    padding: 25px;
+    margin-left: 500px;
+    margin-top: 100px;
+}

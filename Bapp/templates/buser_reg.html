@@ -1,0 +1,61 @@
+{% extends 'index.html' %}
+{% block title %}
+<title>Blood user Register</title>
+{% endblock %}
+
+{% block content %}
+<div class="row">
+<form action="" method="post">
+    {% csrf_token %}
+
+    <label for="formGroupExampleInput" class="form-label">Blood User Name</label>
+    <input type="text" class="form-control" id="formGroupExampleInput" name="Buser_name" required>
+  
+
+
+    <label for="formGroupExampleInput" class="form-label">Blood User Place</label>
+    <input type="text" class="form-control" id="formGroupExampleInput" name="Buser_place" required>
+  
+    <label for="exampleFormControlTextarea1" class="form-label">Blood User Address</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="Buser_address" required></textarea>
+  
+  
+    <label for="inputState" class="form-label">Blood User Blood Type</label>
+    <select id="inputState" class="form-select" name="Buser_blood_type" required>
+      
+      <option value="O+ ive">O POSITIVE</option>
+      <option value="O- ive">O NEGATIVE</option>
+      <option value="A+ ive">A POSITIVE</option>
+      <option value="A- ive">A NEGATIVE</option>
+      <option value="B+ ive">B POSITIVE</option>
+      <option value="B- ive">B NEGATIVE</option>
+      <option value="AB+ ive">AB POSITIVE</option>
+      <option value="AB- ive">AB NEGATIVE</option>     
+    </select>
+ 
+
+    <label for="formGroupExampleInput" class="form-label">Blood User Contact Number</label>
+    <input type="number" class="form-control" id="formGroupExampleInput" name="Buser_contact_number" required>
+
+ 
+    <label for="formGroupExampleInput" class="form-label">Blood User Username</label>
+    <input type="text" class="form-control" id="formGroupExampleInput" name="username" required>
+
+    <label for="inputPassword3" class="form-label">Email</label>
+        <input type="email" class="form-control" id="inputPassword3" name="email" required>
+
+    <label for="inputPassword3" class="form-label">Password</label>
+    <input type="password" class="form-control" id="inputPassword3" name="password1" required>
+
+   
+
+    <label for="inputPassword3" class="form-label">Conform Password</label>
+    <input type="password" class="form-control" id="inputPassword3" name="password2" required>
+      
+    
+<br>
+
+<button type="submit" class="btn btn-success">Register</button>
+</form>
+</div>
+{% endblock %}
